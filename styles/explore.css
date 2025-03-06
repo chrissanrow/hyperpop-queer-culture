@@ -33,3 +33,40 @@ a {
     text-underline-offset: auto;
     text-underline-position: from-font;
 }
+
+h1 {
+    color: #4E1414;
+    font-family: Helvetica;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: 75px;
+    /* 100% */
+}
+
+p {
+    color: #000;
+    text-align: justify;
+    font-family: Georgia;
+    font-size: 2em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    /* 100% */
+    text-underline-position: from-font;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row p {
+    margin-right: 50px;
+}
+
+.row img {
+    width: 25%;
+    height: 25%;
+}
