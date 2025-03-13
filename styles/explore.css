@@ -44,7 +44,7 @@ h1 {
 }
 
 p {
-    color: #000;
+    color: #363636;
     text-align: justify;
     font-family: Georgia;
     font-size: 2em;
@@ -57,7 +57,7 @@ p {
 
 .row {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
 }
@@ -69,4 +69,25 @@ p {
 .row img {
     width: 25%;
     height: 25%;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-out forwards;
+}
+
+figcaption{
+    color: #4b4b4b;
+    text-align: right;
 }
