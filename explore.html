@@ -182,7 +182,7 @@
             </p>
         </div>
         <div class="animation" data-animation="fade-in-bottom">
-            <audio id="woodside" controls>
+            <audio id="woodside1" controls>
                 <source src="assets\07. woodside gardens 16 december 2012.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
@@ -203,6 +203,10 @@
         </div>
         <div class="animation" data-animation="fade-in-bottom">
             <p>Jane goes on to reflect on the feelings of self-harm as a result of this doubting and social rejection of her own identity. The song goes into a climax with a breakdown in the beat which reflects the emotional turmoil Jane faces in this struggle.</p>
+            <audio id="woodside2" controls>
+                <source src="assets\07. woodside gardens 16 december 2012.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
             <blockquote>
                 Feeling dangerous, I might harm it all away
                 <br>
@@ -235,10 +239,8 @@
                 explosive breakdown.
             </p>
         </div>
-        <audio id="movies" controls>
-            <source src="assets\07 movies for guys.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <div id="waveform">
+        </div>
         <div class="row animation" data-animation="fade-in-bottom">
             <p>
                 Again, near the beginning of the track, ADSR works to evoke different emotions for the same exact sound. There is an
@@ -279,4 +281,17 @@
     </div>
 </body>
 <script src="scripts/explore.js"></script>
+<script type="module">
+    import WaveSurfer from 'https://cdn.jsdelivr.net/npm/wavesurfer.js@7/dist/wavesurfer.esm.js'
+
+    const wavesurfer = WaveSurfer.create({
+        container: '#waveform',
+        waveColor: '#4F4A85',
+        progressColor: '#383351',
+        url: 'assets/07 movies for guys.mp3',
+        mediaControls: true,
+        autoScroll: true,
+    })
+</script>
+
 </html>
