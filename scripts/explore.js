@@ -17,3 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(element);
   });
 });
+
+const audio = document.getElementById("woodside");
+audio.addEventListener("loadedmetadata", () => {
+    audio.currentTime = 50; // Start at 30 seconds
+});

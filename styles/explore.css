@@ -91,3 +91,11 @@ figcaption{
     color: #4b4b4b;
     text-align: right;
 }
+
+blockquote {
+    border-left: 4px solid #4b4b4b;
+    margin: 1em 0;
+    padding-left: 10px;
+    color: #4b4b4b;
+    font-size: 2.5em;
+}
