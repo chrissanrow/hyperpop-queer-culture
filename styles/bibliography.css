@@ -54,3 +54,10 @@ h1 {
     line-height: 75px;
     /* 100% */
 }
+
+#cited a{
+    font-family: Georgia;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
